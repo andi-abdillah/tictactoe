@@ -104,7 +104,11 @@ function generate() {
             let button = document.createElement("button");
             button.style.width = BUTTON_SIZE;
             button.style.height = BUTTON_SIZE;
-            button.style.fontSize = "50px"
+            button.style.fontSize = "50px";
+            button.style.backgroundColor = "#7a3aa8";
+            button.style.border = "none";
+            button.style.color = "white";
+            button.style.borderRadius = "20px";
             button.id = i + "-" + j;
             button.addEventListener('click', click);
 
