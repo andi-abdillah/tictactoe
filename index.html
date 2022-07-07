@@ -2,18 +2,31 @@
     <head>
         <script src="index.js"></script>
         <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            table {
+                font-size: 25px;
+            }
             .scoreboard tr {
+                height: 50px;
                 border: 1px solid black;
             }
             .scoreboard th {
                 border: 1px solid black;
             }
             .scoreboard td {
+                width: 80px;
                 border: 1px solid black;
             }
         </style>
     </head>
     <body onload="generate()">
+        <main>
+            
         <div id="board"></div>
         <div>
             <table class="scoreboard">
@@ -35,5 +48,6 @@
                 </tbody>
             </table>
         </div>
+    </main>
     </body>
 </html>
